@@ -4,44 +4,72 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Kapakana:wght@300..400&family=Passion+One:wght@400;700;900&family=Playwrite+HU:wght@100..400&family=Sriracha&family=Wavefont:wght@4..1000&display=swap');
 
-body {
-    background-image: url('imagens/background001.jpg');
-    background-size: 200px auto;
-    background-repeat: no-repeat;
-    background-color: white;
-    color: black;
-    font-style: unset;
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+html, body {
+    min-height: 100vh;
+    background-color: darkgray;
 }
 
 header {
     background-color: black;
-    border: 30px solid black;
-    padding: 20px;
     color: white;
+    border: 30px solid black;
     text-align: center;
+    padding: 20px;
     font-family: Verdana, Tahoma, sans-serif;
     font-weight: bolder;
     text-decoration: none;
 }
 
-main {
-    font-family: 'Magyarország';
-    font-size: 18px;
-    font-style: unset;
+header > h1 {
+    padding: 50px;
+    font-variant: small-caps;
+}
+
+header > p {
+    padding-bottom: 50px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+section {
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    padding-left: 30px;
+    line-height: 2em;
+}
+
+section.normal {
+    background-color: white;
+    color: black;
+}
+
+section.imagem {
+    background-color: rgb(88, 88, 88);
+    color: white;
+}
+
+section.imagem > p {
+    width: 400px;
+    background-color: rgba(0, 0, 0, 0.349);
+    
 }
 
 footer {
     background-color: black;
     color: white;
-    margin-bottom: 0px;
-    
-}
-
-section {
-    background-image: transparent;
-}
-
-h1 {
-    font-family:'Bebas';
-    font-size: 54px bold;
+    text-align: center;   
+    padding: 10px; 
 }
